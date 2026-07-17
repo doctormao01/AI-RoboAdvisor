@@ -8,3 +8,53 @@
 2026-07-17 16:53:24.294 | INFO     | core.data_engine:update_symbol:27 - VEA: 2514 righe salvate.
 2026-07-17 16:53:24.294 | INFO     | core.data_engine:update_symbol:16 - Download VWO
 2026-07-17 16:53:26.863 | INFO     | core.data_engine:update_symbol:27 - VWO: 2514 righe salvate.
+2026-07-17 17:37:28.163 | INFO     | core.data_engine:update_symbol:28 - Download SPY
+2026-07-17 17:37:29.263 | ERROR    | core.data_engine:update_symbols:98 - SPY: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-07-17 17:37:29.263 | INFO     | core.data_engine:update_symbol:28 - Download QQQ
+2026-07-17 17:37:29.843 | ERROR    | core.data_engine:update_symbols:98 - QQQ: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-07-17 17:37:29.843 | INFO     | core.data_engine:update_symbol:28 - Download VTI
+2026-07-17 17:37:30.389 | ERROR    | core.data_engine:update_symbols:98 - VTI: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-07-17 17:37:30.389 | INFO     | core.data_engine:update_symbol:28 - Download VEA
+2026-07-17 17:37:30.913 | ERROR    | core.data_engine:update_symbols:98 - VEA: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-07-17 17:37:30.913 | INFO     | core.data_engine:update_symbol:28 - Download VWO
+2026-07-17 17:37:31.449 | ERROR    | core.data_engine:update_symbols:98 - VWO: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-07-17 17:50:27.558 | INFO     | core.data_engine:update_symbol:28 - Download SPY
+2026-07-17 17:50:30.804 | INFO     | core.data_engine:update_symbol:84 - SPY: 2514 righe salvate.
+2026-07-17 17:50:30.804 | INFO     | core.data_engine:update_symbol:28 - Download QQQ
+2026-07-17 17:50:33.206 | INFO     | core.data_engine:update_symbol:84 - QQQ: 2514 righe salvate.
+2026-07-17 17:50:33.206 | INFO     | core.data_engine:update_symbol:28 - Download VTI
+2026-07-17 17:50:35.570 | INFO     | core.data_engine:update_symbol:84 - VTI: 2514 righe salvate.
+2026-07-17 17:50:35.571 | INFO     | core.data_engine:update_symbol:28 - Download VEA
+2026-07-17 17:50:37.960 | INFO     | core.data_engine:update_symbol:84 - VEA: 2514 righe salvate.
+2026-07-17 17:50:37.961 | INFO     | core.data_engine:update_symbol:28 - Download VWO
+2026-07-17 17:50:40.290 | INFO     | core.data_engine:update_symbol:84 - VWO: 2514 righe salvate.
+2026-07-17 18:14:57.168 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-17 18:15:00.889 | INFO     | core.data_engine:update_symbol:95 - SPY: 2514 righe salvate.
+2026-07-17 18:15:00.889 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-17 18:15:04.165 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2514 righe salvate.
+2026-07-17 18:15:04.165 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-17 18:15:07.528 | INFO     | core.data_engine:update_symbol:95 - VTI: 2514 righe salvate.
+2026-07-17 18:15:07.528 | INFO     | core.data_engine:update_symbol:29 - Download VEA
+2026-07-17 18:15:10.769 | INFO     | core.data_engine:update_symbol:95 - VEA: 2514 righe salvate.
+2026-07-17 18:15:10.769 | INFO     | core.data_engine:update_symbol:29 - Download VWO
+2026-07-17 18:15:13.985 | INFO     | core.data_engine:update_symbol:95 - VWO: 2514 righe salvate.
+2026-07-17 18:28:46.610 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-17 18:28:51.430 | INFO     | core.data_engine:update_symbol:95 - SPY: 2514 righe salvate.
+2026-07-17 18:28:51.430 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-17 18:28:54.531 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2514 righe salvate.
+2026-07-17 18:28:54.532 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-17 18:28:57.687 | INFO     | core.data_engine:update_symbol:95 - VTI: 2514 righe salvate.
+2026-07-17 18:28:57.688 | INFO     | core.data_engine:update_symbol:29 - Download VEA
+2026-07-17 18:29:00.889 | INFO     | core.data_engine:update_symbol:95 - VEA: 2514 righe salvate.
+2026-07-17 18:29:00.889 | INFO     | core.data_engine:update_symbol:29 - Download VWO
+2026-07-17 18:29:03.965 | INFO     | core.data_engine:update_symbol:95 - VWO: 2514 righe salvate.
+2026-07-17 18:36:16.207 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-17 18:36:20.038 | INFO     | core.data_engine:update_symbol:95 - SPY: 2514 righe salvate.
+2026-07-17 18:36:20.038 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-17 18:36:23.380 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2514 righe salvate.
+2026-07-17 18:36:23.380 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-17 18:36:26.751 | INFO     | core.data_engine:update_symbol:95 - VTI: 2514 righe salvate.
+2026-07-17 18:36:26.751 | INFO     | core.data_engine:update_symbol:29 - Download VEA
+2026-07-17 18:36:30.112 | INFO     | core.data_engine:update_symbol:95 - VEA: 2514 righe salvate.
+2026-07-17 18:36:30.112 | INFO     | core.data_engine:update_symbol:29 - Download VWO
+2026-07-17 18:36:33.449 | INFO     | core.data_engine:update_symbol:95 - VWO: 2514 righe salvate.

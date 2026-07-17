@@ -26,6 +26,10 @@ class Database:
 
     def initialize(self):
 
+        # ==========================
+        # TABELLA PREZZI
+        # ==========================
+
         self.cursor.execute("""
         CREATE TABLE IF NOT EXISTS prices(
 
@@ -54,6 +58,64 @@ class Database:
         )
         """)
 
+        # ==========================
+        # TABELLA INDICATORI
+        # ==========================
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS indicators(
+
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+            symbol TEXT NOT NULL,
+
+            date TEXT NOT NULL,
+
+            ema20 REAL,
+
+            ema50 REAL,
+
+            ema200 REAL,
+
+            rsi REAL,
+
+            macd REAL,
+
+            signal REAL,
+
+            histogram REAL,
+
+            atr REAL,
+
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+            UNIQUE(symbol,date)
+
+        )
+        """)
+
+        # ==========================
+        # TABELLA AI SCORE
+        # ==========================
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS scores(
+
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+            symbol TEXT NOT NULL,
+
+            date TEXT NOT NULL,
+
+            score REAL,
+
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+            UNIQUE(symbol,date)
+
+        )
+        """)
+
         self.connection.commit()
 
     def execute(self, sql, params=()):
@@ -67,6 +129,85 @@ class Database:
         self.cursor.execute(sql, params)
 
         return self.cursor.fetchall()
+
+    def save_indicator(
+        self,
+        symbol,
+        date,
+        ema20,
+        ema50,
+        ema200,
+        rsi,
+        macd,
+        signal,
+        histogram,
+        atr
+    ):
+
+        self.cursor.execute(
+            """
+            INSERT OR REPLACE INTO indicators(
+
+                symbol,
+                date,
+                ema20,
+                ema50,
+                ema200,
+                rsi,
+                macd,
+                signal,
+                histogram,
+                atr
+
+            )
+
+            VALUES(?,?,?,?,?,?,?,?,?,?)
+
+            """,
+            (
+                symbol,
+                date,
+                ema20,
+                ema50,
+                ema200,
+                rsi,
+                macd,
+                signal,
+                histogram,
+                atr
+            )
+        )
+
+        self.connection.commit()
+
+    def save_score(
+        self,
+        symbol,
+        date,
+        score
+    ):
+
+        self.cursor.execute(
+            """
+            INSERT OR REPLACE INTO scores(
+
+                symbol,
+                date,
+                score
+
+            )
+
+            VALUES(?,?,?)
+
+            """,
+            (
+                symbol,
+                date,
+                score
+            )
+        )
+
+        self.connection.commit()
 
     def close(self):
 

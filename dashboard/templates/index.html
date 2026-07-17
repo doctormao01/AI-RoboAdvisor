@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>AI Robo Advisor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>🤖 AI Robo Advisor</h1>
+
+<h2>Ranking</h2>
+<table>
+<tr><th>ETF</th><th>Score</th></tr>
+{% for r in ranking %}
+<tr><td>{{r.symbol}}</td><td>{{"%.1f"|format(r.score)}}</td></tr>
+{% endfor %}
+</table>
+
+<h2>Portafoglio</h2>
+<table>
+<tr><th>ETF</th><th>Peso %</th><th>Importo</th><th>Quote</th></tr>
+{% for p in portfolio %}
+<tr>
+<td>{{p.symbol}}</td>
+<td>{{"%.2f"|format(p.weight)}}</td>
+<td>€ {{"%.2f"|format(p.amount)}}</td>
+<td>{{"%.4f"|format(p.shares)}}</td>
+</tr>
+{% endfor %}
+</table>
+</body></html>

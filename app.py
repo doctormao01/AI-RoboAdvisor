@@ -1,47 +1,40 @@
 """
 AI Robo Advisor
-Versione 0.1.0
+Release 0.1
 """
 
-from config import (
-    APP_NAME,
-    VERSION,
-    DATABASE_DIR,
-    CACHE_DIR,
-    LOG_DIR,
-    REPORT_DIR,
-    DATA_DIR,
-)
+from core.data_engine import DataEngine
+
+try:
+    from data.etf_list import ETF_LIST
+except ImportError:
+    ETF_LIST = ["SPY"]
 
 
 def banner():
     print("=" * 60)
-    print(f"{APP_NAME} - v{VERSION}")
+    print("AI Robo Advisor - v0.1.0")
     print("=" * 60)
-
-
-def check_directories():
-    print("\nControllo cartelle:\n")
-
-    folders = [
-        DATABASE_DIR,
-        CACHE_DIR,
-        LOG_DIR,
-        REPORT_DIR,
-        DATA_DIR,
-    ]
-
-    for folder in folders:
-        status = "OK" if folder.exists() else "ERRORE"
-        print(f"[{status}] {folder.name}")
+    print()
 
 
 def main():
     banner()
-    check_directories()
 
-    print("\nSistema inizializzato correttamente.")
-    print("Pronto per il Data Engine.")
+    print(f"ETF da aggiornare: {len(ETF_LIST)}")
+    print()
+
+    engine = DataEngine()
+
+    try:
+        engine.update_symbols(ETF_LIST)
+    finally:
+        engine.close()
+
+    print()
+    print("=" * 60)
+    print("Aggiornamento completato.")
+    print("=" * 60)
 
 
 if __name__ == "__main__":

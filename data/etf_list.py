@@ -1,0 +1,1 @@
+ETF_LIST=["SPY","QQQ","VTI","VEA","VWO"]

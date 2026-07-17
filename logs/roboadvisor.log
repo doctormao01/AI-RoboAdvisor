@@ -1,0 +1,10 @@
+2026-07-17 16:53:11.693 | INFO     | core.data_engine:update_symbol:16 - Download SPY
+2026-07-17 16:53:16.271 | INFO     | core.data_engine:update_symbol:27 - SPY: 2514 righe salvate.
+2026-07-17 16:53:16.272 | INFO     | core.data_engine:update_symbol:16 - Download QQQ
+2026-07-17 16:53:18.872 | INFO     | core.data_engine:update_symbol:27 - QQQ: 2514 righe salvate.
+2026-07-17 16:53:18.872 | INFO     | core.data_engine:update_symbol:16 - Download VTI
+2026-07-17 16:53:21.585 | INFO     | core.data_engine:update_symbol:27 - VTI: 2514 righe salvate.
+2026-07-17 16:53:21.585 | INFO     | core.data_engine:update_symbol:16 - Download VEA
+2026-07-17 16:53:24.294 | INFO     | core.data_engine:update_symbol:27 - VEA: 2514 righe salvate.
+2026-07-17 16:53:24.294 | INFO     | core.data_engine:update_symbol:16 - Download VWO
+2026-07-17 16:53:26.863 | INFO     | core.data_engine:update_symbol:27 - VWO: 2514 righe salvate.

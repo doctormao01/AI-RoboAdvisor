@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 
 from core.ranking_engine import RankingEngine
+from core.analytics_engine import AnalyticsEngine
 
 
 class PortfolioEngine:
@@ -14,6 +15,7 @@ class PortfolioEngine:
     def __init__(self, capital=4000.0):
         self.capital = float(capital)
         self.ranking = RankingEngine()
+        self.analytics = AnalyticsEngine()
 
     def build(self, limit=5):
 
@@ -88,7 +90,26 @@ class PortfolioEngine:
 
         self.save(portfolio)
 
+        # ===========================
+        # SALVATAGGIO STORICO
+        # ===========================
+
+        stats = self.analytics.save_snapshot(
+            self.capital,
+            portfolio
+        )
+
+        print()
+        print("Portfolio Analytics")
+        print("------------------------------")
+        print(f"Capitale:           € {stats['capital']:.2f}")
+        print(f"Valore portafoglio: € {stats['portfolio_value']:.2f}")
+        print(f"Profitto:           € {stats['profit']:.2f}")
+        print(f"Rendimento:         {stats['profit_percent']:.2f}%")
+        print()
+
         return portfolio
 
     def close(self):
+        self.analytics.close()
         self.ranking.close()

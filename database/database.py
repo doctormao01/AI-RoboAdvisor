@@ -116,6 +116,30 @@ class Database:
         )
         """)
 
+        # ==========================
+        # STORICO PORTAFOGLIO
+        # ==========================
+
+        self.cursor.execute("""
+        CREATE TABLE IF NOT EXISTS portfolio_history(
+
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+            snapshot_date TEXT NOT NULL,
+
+            capital REAL NOT NULL,
+
+            portfolio_value REAL NOT NULL,
+
+            profit REAL NOT NULL,
+
+            profit_percent REAL NOT NULL,
+
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+        )
+        """)
+
         self.connection.commit()
 
     def execute(self, sql, params=()):
@@ -208,6 +232,65 @@ class Database:
         )
 
         self.connection.commit()
+
+    def save_portfolio_snapshot(
+        self,
+        snapshot_date,
+        capital,
+        portfolio_value,
+        profit,
+        profit_percent
+    ):
+
+        self.cursor.execute(
+            """
+            INSERT INTO portfolio_history(
+
+                snapshot_date,
+                capital,
+                portfolio_value,
+                profit,
+                profit_percent
+
+            )
+
+            VALUES(?,?,?,?,?)
+
+            """,
+            (
+                snapshot_date,
+                capital,
+                portfolio_value,
+                profit,
+                profit_percent
+            )
+        )
+
+        self.connection.commit()
+
+    def get_portfolio_history(self, limit=365):
+
+        self.cursor.execute(
+            """
+            SELECT
+
+                snapshot_date,
+                capital,
+                portfolio_value,
+                profit,
+                profit_percent
+
+            FROM portfolio_history
+
+            ORDER BY snapshot_date ASC
+
+            LIMIT ?
+
+            """,
+            (limit,)
+        )
+
+        return self.cursor.fetchall()
 
     def close(self):
 

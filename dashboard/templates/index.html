@@ -248,11 +248,9 @@
 
         </div>
 
-    </div>
+    </div>    <!-- PORTAFOGLIO -->
 
-    <!-- PORTAFOGLIO -->
-
-    <div class="card shadow">
+    <div class="card shadow mb-4">
 
         <div class="card-body">
 
@@ -299,7 +297,55 @@
 
     </div>
 
+    <!-- GRAFICI -->
+
+    <div class="row">
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h4>🥧 Allocazione ETF</h4>
+
+                    <canvas
+                        id="portfolioPie"
+                        data-labels='{{ portfolio | map(attribute="symbol") | list | tojson }}'
+                        data-values='{{ portfolio | map(attribute="weight") | list | tojson }}'>
+                    </canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h4>📈 Andamento Portafoglio</h4>
+
+                    <p class="text-muted">
+                        Lo storico sarà disponibile nella prossima release.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
 
 <script src="{{ url_for('static', filename='app.js') }}"></script>
 

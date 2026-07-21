@@ -30,6 +30,7 @@ DEFAULT_SETTINGS = {
 
 
 def load_settings():
+
     CONFIG_DIR.mkdir(exist_ok=True)
 
     if not SETTINGS_FILE.exists():
@@ -46,6 +47,7 @@ def load_settings():
 
 
 def save_settings(data):
+
     CONFIG_DIR.mkdir(exist_ok=True)
 
     with open(SETTINGS_FILE, "w", encoding="utf-8") as f:
@@ -99,7 +101,11 @@ def save_settings_route():
 @app.route("/update_data", methods=["POST"])
 def update_data():
 
-    thread = threading.Thread(target=update_all)
+    thread = threading.Thread(
+        target=update_all,
+        daemon=True
+    )
+
     thread.start()
 
     return jsonify({
@@ -108,5 +114,31 @@ def update_data():
     })
 
 
+@app.errorhandler(Exception)
+def handle_exception(e):
+
+    return jsonify({
+        "error": str(e)
+    }), 500
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+
+    print()
+    print("=" * 70)
+    print("AI Robo Advisor Dashboard")
+    print("=" * 70)
+    print("Apri il browser su:")
+    print()
+    print("http://127.0.0.1:5050")
+    print("oppure")
+    print("http://localhost:5050")
+    print("=" * 70)
+    print()
+
+    app.run(
+        host="127.0.0.1",
+        port=5050,
+        debug=True,
+        use_reloader=False
+    )

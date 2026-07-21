@@ -58,3 +58,53 @@
 2026-07-17 18:36:30.112 | INFO     | core.data_engine:update_symbol:95 - VEA: 2514 righe salvate.
 2026-07-17 18:36:30.112 | INFO     | core.data_engine:update_symbol:29 - Download VWO
 2026-07-17 18:36:33.449 | INFO     | core.data_engine:update_symbol:95 - VWO: 2514 righe salvate.
+2026-07-21 11:38:01.094 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-21 11:38:05.976 | INFO     | core.data_engine:update_symbol:95 - SPY: 2512 righe salvate.
+2026-07-21 11:38:05.976 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-21 11:38:09.914 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2512 righe salvate.
+2026-07-21 11:38:09.914 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-21 11:38:13.740 | INFO     | core.data_engine:update_symbol:95 - VTI: 2512 righe salvate.
+2026-07-21 11:38:13.740 | INFO     | core.data_engine:update_symbol:29 - Download SCHD
+2026-07-21 11:38:17.799 | INFO     | core.data_engine:update_symbol:95 - SCHD: 2512 righe salvate.
+2026-07-21 11:38:17.799 | INFO     | core.data_engine:update_symbol:29 - Download VXUS
+2026-07-21 11:38:22.570 | INFO     | core.data_engine:update_symbol:95 - VXUS: 2512 righe salvate.
+2026-07-21 11:38:42.501 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-21 11:38:46.689 | INFO     | core.data_engine:update_symbol:95 - SPY: 2512 righe salvate.
+2026-07-21 11:38:46.690 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-21 11:38:50.763 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2512 righe salvate.
+2026-07-21 11:38:50.763 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-21 11:38:54.914 | INFO     | core.data_engine:update_symbol:95 - VTI: 2512 righe salvate.
+2026-07-21 11:38:54.915 | INFO     | core.data_engine:update_symbol:29 - Download SCHD
+2026-07-21 11:38:59.544 | INFO     | core.data_engine:update_symbol:95 - SCHD: 2512 righe salvate.
+2026-07-21 11:38:59.544 | INFO     | core.data_engine:update_symbol:29 - Download VXUS
+2026-07-21 11:39:03.654 | INFO     | core.data_engine:update_symbol:95 - VXUS: 2512 righe salvate.
+2026-07-21 11:40:17.425 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-21 11:40:21.409 | INFO     | core.data_engine:update_symbol:95 - SPY: 2512 righe salvate.
+2026-07-21 11:40:21.409 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-21 11:40:25.309 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2512 righe salvate.
+2026-07-21 11:40:25.309 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-21 11:40:29.185 | INFO     | core.data_engine:update_symbol:95 - VTI: 2512 righe salvate.
+2026-07-21 11:40:29.185 | INFO     | core.data_engine:update_symbol:29 - Download SCHD
+2026-07-21 11:40:33.042 | INFO     | core.data_engine:update_symbol:95 - SCHD: 2512 righe salvate.
+2026-07-21 11:40:33.042 | INFO     | core.data_engine:update_symbol:29 - Download VXUS
+2026-07-21 11:40:36.865 | INFO     | core.data_engine:update_symbol:95 - VXUS: 2512 righe salvate.
+2026-07-21 11:40:53.325 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-21 11:40:57.452 | INFO     | core.data_engine:update_symbol:95 - SPY: 2512 righe salvate.
+2026-07-21 11:40:57.452 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-21 11:41:01.471 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2512 righe salvate.
+2026-07-21 11:41:01.471 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-21 11:41:05.281 | INFO     | core.data_engine:update_symbol:95 - VTI: 2512 righe salvate.
+2026-07-21 11:41:05.282 | INFO     | core.data_engine:update_symbol:29 - Download SCHD
+2026-07-21 11:41:09.148 | INFO     | core.data_engine:update_symbol:95 - SCHD: 2512 righe salvate.
+2026-07-21 11:41:09.149 | INFO     | core.data_engine:update_symbol:29 - Download VXUS
+2026-07-21 11:41:12.952 | INFO     | core.data_engine:update_symbol:95 - VXUS: 2512 righe salvate.
+2026-07-21 11:42:11.788 | INFO     | core.data_engine:update_symbol:29 - Download SPY
+2026-07-21 11:42:16.143 | INFO     | core.data_engine:update_symbol:95 - SPY: 2512 righe salvate.
+2026-07-21 11:42:16.143 | INFO     | core.data_engine:update_symbol:29 - Download QQQ
+2026-07-21 11:42:20.326 | INFO     | core.data_engine:update_symbol:95 - QQQ: 2512 righe salvate.
+2026-07-21 11:42:20.326 | INFO     | core.data_engine:update_symbol:29 - Download VTI
+2026-07-21 11:42:24.065 | INFO     | core.data_engine:update_symbol:95 - VTI: 2512 righe salvate.
+2026-07-21 11:42:24.065 | INFO     | core.data_engine:update_symbol:29 - Download SCHD
+2026-07-21 11:42:27.955 | INFO     | core.data_engine:update_symbol:95 - SCHD: 2512 righe salvate.
+2026-07-21 11:42:27.955 | INFO     | core.data_engine:update_symbol:29 - Download VXUS
+2026-07-21 11:42:31.960 | INFO     | core.data_engine:update_symbol:95 - VXUS: 2512 righe salvate.

@@ -1,0 +1,7 @@
+{
+    "capital": 6000.0,
+    "currency": "EUR",
+    "broker": "paper",
+    "risk_level": "medium",
+    "rebalance": "monthly"
+}
